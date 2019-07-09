@@ -57,9 +57,9 @@ public class AdminAddCourseController implements Initializable {
     Statement stm;
     int res;
     @FXML
-    private ChoiceBox daysdropdown;
+    private ChoiceBox<String> daysdropdown;
     @FXML
-    private ChoiceBox timedropdown;
+    private ChoiceBox<String> timedropdown;
     /**
      * Initializes the controller class.
      */
@@ -70,6 +70,7 @@ public class AdminAddCourseController implements Initializable {
         } catch (SQLException ex) {
             Logger.getLogger(AdminAddCourseController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
         timedropdown.setItems(observableArrayList("8:00","9:30","11:00","12:30","2:00","3:30","5:00"));
         timedropdown.setTooltip(new Tooltip("Select Class Starting Time"));
         daysdropdown.setItems(observableArrayList("Sunday & Tuesday","Monday & Wednesday",
@@ -111,16 +112,15 @@ public class AdminAddCourseController implements Initializable {
             alert.showAndWait();
             return;
         }
-        if (Code.isEmpty() || Department.isEmpty() || Name.isEmpty() || Section.isEmpty()) {
+            String Days = daysdropdown.getValue();
+            String Time = timedropdown.getValue();
+        if (Code.isEmpty() || Department.isEmpty() || Name.isEmpty() || Section.isEmpty() || Days==null || Time==null) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Please Enter in all the fields");
             alert.showAndWait();
             return;
         }
-            String Days = daysdropdown.getValue().toString();
-            String Time = timedropdown.getValue().toString();
-
     String qu = "INSERT INTO COURSE VALUES("
                 + "'" + Code + "',"
                 + "'" + Department + "',"
