@@ -27,12 +27,12 @@
                   <Font name="System Bold" size="19.0" />
                </font>
             </Button>
-            <Button fx:id="deletecourse" layoutX="540.0" layoutY="22.0" mnemonicParsing="false" onAction="#gotodeletecourse" prefHeight="42.0" prefWidth="328.0" text="Delete Course">
+            <Button fx:id="editcoursefaculty" mnemonicParsing="false" onAction="#gotoeditcoursefaculty" prefHeight="42.0" prefWidth="328.0" text="Edit Course Faculty">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
             </Button>
-            <Button fx:id="editcoursefaculty" mnemonicParsing="false" onAction="#gotoeditcoursefaculty" prefHeight="42.0" prefWidth="328.0" text="Edit Course Faculty">
+            <Button fx:id="deletecourse" layoutX="540.0" layoutY="22.0" mnemonicParsing="false" onAction="#gotodeletecourse" prefHeight="42.0" prefWidth="328.0" text="Delete Course">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
