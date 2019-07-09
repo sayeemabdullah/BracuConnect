@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="397.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.FacultyDashController">
+   <children>
+      <Button fx:id="logout" layoutX="591.0" mnemonicParsing="false" onAction="#gotoroot" prefHeight="51.0" prefWidth="117.0" text="Log out">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="setting" layoutX="474.0" mnemonicParsing="false" onAction="#gotosetting" prefHeight="51.0" prefWidth="117.0" text="Settings">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="advisingpanel" layoutX="318.0" mnemonicParsing="false" onAction="#gotostudentadvisingpanel" prefHeight="51.0" prefWidth="156.0" text="Advising Panel">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRACU CONNECT" wrappingWidth="286.9999985694885">
+         <font>
+            <Font name="Rockwell" size="32.0" />
+         </font>
+      </Text>
+      <TextField fx:id="Searchid" layoutX="14.0" layoutY="76.0" onAction="#getid" prefHeight="31.0" prefWidth="299.0" promptText="Enter Student ID" />
+      <Button fx:id="searchbtn" layoutX="331.0" layoutY="76.0" mnemonicParsing="false" onAction="#searchid" prefHeight="31.0" prefWidth="88.0" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="studenttable" layoutY="138.0" prefHeight="261.0" prefWidth="708.0">
+        <columns>
+          <TableColumn fx:id="studentid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="studentname" prefWidth="187.0" text="Name" />
+            <TableColumn fx:id="studentemail" prefWidth="184.0" text="Email Address" />
+            <TableColumn fx:id="studentnumber" prefWidth="165.0" text="Phone Number" />
+            <TableColumn fx:id="studentdpt" prefWidth="96.0" text="Department" />
+        </columns>
+      </TableView>
+      <Button fx:id="refreshbtn" layoutX="533.0" layoutY="76.0" mnemonicParsing="false" onAction="#restart" prefHeight="31.0" prefWidth="88.0" text="Refresh">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="showbtn" layoutX="430.0" layoutY="76.0" mnemonicParsing="false" onAction="#showstudent" prefHeight="31.0" prefWidth="88.0" text="Show All">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

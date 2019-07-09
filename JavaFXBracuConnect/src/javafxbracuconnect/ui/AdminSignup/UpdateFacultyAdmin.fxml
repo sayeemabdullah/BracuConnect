@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.UpdateFacultyAdminController">
+   <children>
+      <AnchorPane prefHeight="495.0" prefWidth="633.0">
+         <children>
+            <JFXTextField fx:id="facultyname" focusColor="#ed4949" layoutX="29.0" layoutY="174.0" maxWidth="539.0" minWidth="408.0" onAction="#addname" prefHeight="57.0" prefWidth="539.0" promptText="Name" unFocusColor="#0a0000">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="facultyemail" focusColor="#ed4949" layoutX="29.0" layoutY="117.0" maxWidth="539.0" minWidth="408.0" onAction="#addemail" prefHeight="57.0" prefWidth="539.0" promptText="Email Address" unFocusColor="BLACK">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="updatebutton" buttonType="RAISED" layoutX="440.0" layoutY="402.0" onAction="#facultyupdate" prefHeight="47.0" prefWidth="128.0" ripplerFill="#ed4949" style="-fx-background-color: ed4949;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="facultyinitial" focusColor="#ed4949" layoutX="29.0" layoutY="231.0" maxWidth="539.0" minWidth="408.0" onAction="#addinitial" prefHeight="57.0" prefWidth="539.0" promptText="Faculty Initial" unFocusColor="#220000">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="facultynumber" focusColor="#ed4949" layoutX="29.0" layoutY="288.0" maxWidth="539.0" minWidth="408.0" onAction="#addnumber" prefHeight="57.0" prefWidth="539.0" promptText="Phone Number" unFocusColor="BLACK">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="cancelbutton" buttonType="RAISED" layoutX="39.0" layoutY="402.0" onAction="#gotoadmindash" prefHeight="47.0" prefWidth="128.0" ripplerFill="#ed4949" style="-fx-background-color: #3b5799;" text="CANCEL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="39.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Faculty Member's Information" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
