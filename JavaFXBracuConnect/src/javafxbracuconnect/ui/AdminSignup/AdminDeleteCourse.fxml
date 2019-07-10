@@ -13,12 +13,12 @@
             <Font name="System Bold" size="41.0" />
          </font>
       </Text>
-      <JFXTextField fx:id="code" layoutX="192.0" layoutY="125.0" maxWidth="330.0" minWidth="287.0" onAction="#addcode" prefHeight="45.0" prefWidth="330.0" promptText="Course Code">
+      <JFXTextField fx:id="code" layoutX="192.0" layoutY="125.0" maxWidth="330.0" minWidth="287.0" onAction="#addcode" prefHeight="45.0" prefWidth="330.0" promptText="Enter Course Code">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="section" layoutX="192.0" layoutY="202.0" maxWidth="330.0" minWidth="287.0" onAction="#addsection" prefHeight="45.0" prefWidth="330.0" promptText="Course Section">
+      <JFXTextField fx:id="section" layoutX="192.0" layoutY="202.0" maxWidth="330.0" minWidth="287.0" onAction="#addsection" prefHeight="45.0" prefWidth="330.0" promptText="Enter Course Section">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
