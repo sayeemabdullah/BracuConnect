@@ -3,7 +3,7 @@
 <br>
 <br>
 Bracu Connect is Database Software which I am making using Java , JavaFx and Apache Derby.
-And I used "NetBeans IDE 8.2" and "SceneBuilder".
+And the software which I am using are "NetBeans IDE 8.2" and "SceneBuilder".
 <br>
 
 
