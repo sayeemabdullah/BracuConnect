@@ -50,7 +50,7 @@
                   </JFXButton>
                </children>
             </AnchorPane>
-            <Text fx:id="main" fill="#ebebeb" layoutX="44.0" layoutY="431.0" onMouseClicked="#gotomain" strokeType="OUTSIDE" strokeWidth="0.0" text="Not a student?" wrappingWidth="275.7255859375">
+            <Text fx:id="main" fill="#ebebeb" layoutX="44.0" layoutY="431.0" onMouseClicked="#gotomain" strokeType="OUTSIDE" strokeWidth="0.0" text="I am not a student." wrappingWidth="275.7255859375">
                <font>
                   <Font size="21.0" />
                </font>

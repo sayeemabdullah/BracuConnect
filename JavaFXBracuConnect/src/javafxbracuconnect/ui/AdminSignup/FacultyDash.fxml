@@ -25,9 +25,9 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BRACU CONNECT" wrappingWidth="286.9999985694885">
+      <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FACULTY DASHBOARD" wrappingWidth="286.9999985694885">
          <font>
-            <Font name="Rockwell" size="32.0" />
+            <Font name="Arial Black" size="22.0" />
          </font>
       </Text>
       <TextField fx:id="Searchid" layoutX="14.0" layoutY="76.0" onAction="#getid" prefHeight="31.0" prefWidth="299.0" promptText="Enter Student ID" />
