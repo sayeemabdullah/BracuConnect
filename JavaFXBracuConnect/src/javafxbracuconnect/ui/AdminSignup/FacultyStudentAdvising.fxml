@@ -89,7 +89,7 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-    <Button fx:id="updateadvising" layoutX="443.0" layoutY="420.0" mnemonicParsing="false" onAction="#gotoupdateadvising" prefHeight="47.0" prefWidth="549.0" text="UPDATE ADVISED STUDENT">
+    <Button fx:id="updateadvising" layoutX="443.0" layoutY="420.0" mnemonicParsing="false" onAction="#gotoupdateadvising" prefHeight="47.0" prefWidth="549.0" text="UPDATE STUDENT'S ADVISED COURSES">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>

@@ -201,8 +201,19 @@ public class FacultyStudentAdvisingController implements Initializable {
             alert.setContentText("Student ID doesn't exists.");
             alert.showAndWait();
             return;
-
         }
+        String DuplicateChecker1 = "SELECT * FROM SAYEEM.ADVISEDCOURSE WHERE ID = '" + StudentID + "'";
+        PreparedStatement pst1 = con.prepareStatement(DuplicateChecker1);
+        System.out.println(DuplicateChecker1);
+        rest = pst1.executeQuery();
+        if (rest.next()) {    
+           Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("The Student has already been advised. Update if you want to advise again.");
+            alert.showAndWait();
+            return;
+        }
+ 
 
         String C01 = c1.getValue();
         if(C01==null){
@@ -351,7 +362,14 @@ public class FacultyStudentAdvisingController implements Initializable {
     }
 
     @FXML
-    private void gotoupdateadvising(ActionEvent event) {
+    private void gotoupdateadvising(ActionEvent event) throws IOException {
+    
+            Parent adminDash = FXMLLoader.load(getClass().getResource("FacultyUpdateAdvisedCourse.fxml"));
+        Scene adminDashScene = new Scene(adminDash);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("BracuConnect");
+        window.setScene(adminDashScene);
+        window.show();
     }
 
     @FXML
