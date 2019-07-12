@@ -37,7 +37,7 @@ import javafx.stage.Stage;
  * @author Sayeem Abdullah
  */
 public class FacultyAdvisingPanelController implements Initializable {
-    ObservableList <AdvisingStudent> alist = FXCollections.observableArrayList();
+    ObservableList <AdvisingStudent> list = FXCollections.observableArrayList();
 
     @FXML
     private TableView<AdvisingStudent> allstudentcoursetable;
@@ -106,13 +106,13 @@ public class FacultyAdvisingPanelController implements Initializable {
                 
                 
                 FacultyAdvisingPanelController.AdvisingStudent advisingstudent = new FacultyAdvisingPanelController.AdvisingStudent (stid,stc1,stc2,stc3,stc4,stc5);
-                alist.add(advisingstudent);
+                list.add(advisingstudent);
             }
         } catch (SQLException ex) {
             Logger.getLogger(FacultyAdvisingPanelController.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        allstudentcoursetable.getItems().setAll(alist);
+        allstudentcoursetable.getItems().setAll(list);
     }
     @FXML
     private void gotoadvising(ActionEvent event) throws IOException {
@@ -153,24 +153,31 @@ public class FacultyAdvisingPanelController implements Initializable {
             
         }
 
-        public String getid() {
+        public String getSid() {
             return sid.get();
         }
-        public String getC1() {
+
+        public String getSc1() {
             return sc1.get();
         }
-        public String getC2() {
+
+        public String getSc2() {
             return sc2.get();
         }
-        public String getC3() {
+
+        public String getSc3() {
             return sc3.get();
         }
-        public String getC4() {
+
+        public String getSc4() {
             return sc4.get();
         }
-        public String getC5() {
+
+        public String getSc5() {
             return sc5.get();
         }
+
+        
         }
     
 }

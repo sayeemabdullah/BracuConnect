@@ -22,11 +22,6 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Text>
-      <ComboBox fx:id="c1" layoutX="181.0" layoutY="174.0" onAction="#getc1" prefHeight="31.0" prefWidth="212.0" />
-      <ComboBox fx:id="c2" layoutX="181.0" layoutY="232.0" onAction="#getc2" prefHeight="31.0" prefWidth="212.0" />
-      <ComboBox fx:id="c3" layoutX="181.0" layoutY="285.0" onAction="#getc3" prefHeight="31.0" prefWidth="212.0" />
-      <ComboBox fx:id="c4" layoutX="181.0" layoutY="338.0" onAction="#getc4" prefHeight="31.0" prefWidth="212.0" />
-      <ComboBox fx:id="c5" layoutX="181.0" layoutY="392.0" onAction="#getc5" prefHeight="31.0" prefWidth="212.0" />
       <Text layoutX="35.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 2 :">
          <font>
             <Font name="System Bold" size="21.0" />
@@ -99,5 +94,10 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
+      <ComboBox fx:id="c1" layoutX="181.0" layoutY="173.0" onAction="#setc1" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c2" layoutX="181.0" layoutY="231.0" onAction="#setc2" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c3" layoutX="181.0" layoutY="284.0" onAction="#setc3" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c4" layoutX="181.0" layoutY="337.0" onAction="#setc4" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c5" layoutX="181.0" layoutY="391.0" onAction="#setc5" prefHeight="31.0" prefWidth="212.0" />
    </children>
 </AnchorPane>

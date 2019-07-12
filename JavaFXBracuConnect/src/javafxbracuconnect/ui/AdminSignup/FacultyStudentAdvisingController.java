@@ -28,11 +28,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -104,12 +106,13 @@ public class FacultyStudentAdvisingController implements Initializable {
         } catch (SQLException ex) {
             Logger.getLogger(FacultyStudentAdvisingController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        initCol();
         try {
             fillComboBox();
         } catch (SQLException ex) {
             Logger.getLogger(FacultyStudentAdvisingController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        initCol();
+
     }    
     private void initCol() {
         name.setCellValueFactory(new PropertyValueFactory<>("sname"));
@@ -180,25 +183,6 @@ public class FacultyStudentAdvisingController implements Initializable {
     private void getid(ActionEvent event) {
     }
 
-    @FXML
-    private void getc1(ActionEvent event) {
-    }
-
-    @FXML
-    private void getc2(ActionEvent event) {
-    }
-
-    @FXML
-    private void getc3(ActionEvent event) {
-    }
-
-    @FXML
-    private void getc4(ActionEvent event) {
-    }
-
-    @FXML
-    private void getc5(ActionEvent event) {
-    }
 
     @FXML
     private void doneadvising(ActionEvent event) throws SQLException, IOException {
@@ -369,6 +353,26 @@ public class FacultyStudentAdvisingController implements Initializable {
     @FXML
     private void gotoupdateadvising(ActionEvent event) {
     }
+
+    @FXML
+    private void setc1(ActionEvent event) {
+    }
+
+    @FXML
+    private void setc2(ActionEvent event) {
+    }
+
+    @FXML
+    private void setc3(ActionEvent event) {
+    }
+
+    @FXML
+    private void setc4(ActionEvent event) {
+    }
+
+    @FXML
+    private void setc5(ActionEvent event) {
+    }
     
      public class Student {
 
@@ -419,21 +423,26 @@ public class FacultyStudentAdvisingController implements Initializable {
             
         }
 
-
-        public String getC1() {
+        public String getSc1() {
             return sc1.get();
         }
-        public String getC2() {
+
+        public String getSc2() {
             return sc2.get();
         }
-        public String getC3() {
+
+        public String getSc3() {
             return sc3.get();
         }
-        public String getC4() {
+
+        public String getSc4() {
             return sc4.get();
         }
-        public String getC5() {
+
+        public String getSc5() {
             return sc5.get();
         }
+
+
         }
 }
