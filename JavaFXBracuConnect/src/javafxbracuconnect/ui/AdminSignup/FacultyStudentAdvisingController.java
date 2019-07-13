@@ -187,6 +187,13 @@ public class FacultyStudentAdvisingController implements Initializable {
     @FXML
     private void doneadvising(ActionEvent event) throws SQLException, IOException {
         String StudentID = id.getText();
+        if ( StudentID.isEmpty()) {
+               Alert alert = new Alert(Alert.AlertType.ERROR);
+               alert.setHeaderText(null);
+               alert.setContentText("Please Enter Student ID");
+               alert.showAndWait();
+               return;
+        }
         System.out.println(StudentID);
         String DuplicateChecker = "SELECT * FROM SAYEEM.STUDENT WHERE ID = '" + StudentID + "'";
         PreparedStatement pst = con.prepareStatement(DuplicateChecker);
