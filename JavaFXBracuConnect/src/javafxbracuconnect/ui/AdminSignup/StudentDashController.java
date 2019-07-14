@@ -82,7 +82,13 @@ public class StudentDashController implements Initializable {
     }
 
     @FXML
-    private void gotostudentcoursedetails(ActionEvent event) {
+    private void gotostudentcoursedetails(ActionEvent event) throws IOException {
+        Parent adminDash = FXMLLoader.load(getClass().getResource("StudentCourseDetails.fxml"));
+        Scene adminDashScene = new Scene(adminDash);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("BracuConnect");
+        window.setScene(adminDashScene);
+        window.show();
     }
 
     @FXML
