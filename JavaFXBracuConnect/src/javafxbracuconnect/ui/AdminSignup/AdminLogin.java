@@ -10,7 +10,7 @@ package javafxbracuconnect.ui.AdminSignup;
  * @author Sayeem Abdullah
  */
 public class AdminLogin {
-  public String AdminEmail;
+  public static String AdminEmail;
     
     public String getAdminEmail(){
     return AdminEmail; 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.StudentAboutMeController">
+   <children>
+      <Text layoutX="206.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Me">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Text>
+      <Label fx:id="id" layoutX="206.0" layoutY="120.0" prefHeight="44.0" prefWidth="425.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font></Label>
+      <Label fx:id="name" layoutX="206.0" layoutY="190.0" prefHeight="44.0" prefWidth="425.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="119.0" prefHeight="44.0" prefWidth="152.0" text="ID :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="189.0" prefHeight="44.0" prefWidth="152.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="dept" layoutX="206.0" layoutY="263.0" prefHeight="44.0" prefWidth="425.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="206.0" layoutY="332.0" prefHeight="44.0" prefWidth="425.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="number" layoutX="206.0" layoutY="398.0" prefHeight="44.0" prefWidth="425.0">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="263.0" prefHeight="44.0" prefWidth="152.0" text="Department :">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="332.0" prefHeight="44.0" prefWidth="152.0" text="Email :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="398.0" prefHeight="44.0" prefWidth="152.0" text="Number :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="editinfo" layoutX="47.0" layoutY="489.0" mnemonicParsing="false" onAction="#gotoeditinfo" prefHeight="53.0" prefWidth="575.0" text="Edit My Information">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="studentdash" layoutX="47.0" layoutY="557.0" mnemonicParsing="false" onAction="#gotostudentdash" prefHeight="53.0" prefWidth="575.0" text="Back to Student Dashboard">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

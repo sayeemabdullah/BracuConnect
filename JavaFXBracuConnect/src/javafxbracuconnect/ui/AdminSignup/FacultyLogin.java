@@ -10,7 +10,7 @@ package javafxbracuconnect.ui.AdminSignup;
  * @author Sayeem Abdullah
  */
 public class FacultyLogin {
-    public String facultyEmail;
+    public static String facultyEmail;
     
     public String getFacultyEmail(){
     return facultyEmail; 

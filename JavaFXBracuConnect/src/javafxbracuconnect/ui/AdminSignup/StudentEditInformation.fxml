@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="377.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.StudentEditInformationController">
+   <children>
+      <TextArea editable="false" layoutX="18.0" layoutY="81.0" prefHeight="203.0" prefWidth="564.0" text="Dear Student, &#10;You cannot Change your information.Please contact administrator&#10; for more information.&#10; Thank you.&#10;- Admin&#10;&#10;">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="ok" layoutX="248.0" layoutY="300.0" mnemonicParsing="false" onAction="#goback" prefHeight="44.0" prefWidth="104.0" text="OK">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

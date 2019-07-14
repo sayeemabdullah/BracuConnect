@@ -83,6 +83,7 @@ public class StudentSignInController implements Initializable {
         con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
         stm = con.createStatement();
         String StudentID = studentid.getText();
+        StudentLogin login = new StudentLogin(); 
         //String duplicateCheck = "SELECT EMAIL ='"+ AdminEmail + "' GROUP BY EMAIL HAVING ( COUNT(EMAIL) = 1 )";
         String StudentPass = studentpass.getText();
         if (StudentID.isEmpty() || StudentPass.isEmpty()) {
@@ -123,6 +124,8 @@ public class StudentSignInController implements Initializable {
             alert.showAndWait();
             return;
             }
+        login.setStudentID(StudentID);
+        System.out.println(login.getStudentID());
     }
 
     @FXML

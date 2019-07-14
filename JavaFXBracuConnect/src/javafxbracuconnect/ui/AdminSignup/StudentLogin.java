@@ -10,7 +10,7 @@ package javafxbracuconnect.ui.AdminSignup;
  * @author Sayeem Abdullah
  */
 public class StudentLogin {
-    public String StudentID;
+    public static String StudentID;
     
     public String getStudentID(){
     return StudentID; 
