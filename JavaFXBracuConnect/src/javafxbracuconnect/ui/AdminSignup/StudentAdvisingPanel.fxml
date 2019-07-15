@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="1012.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.StudentAdvisingPanelController">
+   <children>
+      <Text layoutX="45.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 1 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 2 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 3 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 4 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 5 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Button fx:id="updateadvising" layoutX="120.0" layoutY="479.0" mnemonicParsing="false" onAction="#doneadvising" prefHeight="47.0" prefWidth="212.0" text="Confirm Advising">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="c1" layoutX="191.0" layoutY="183.0" onAction="#setc1" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c2" layoutX="191.0" layoutY="241.0" onAction="#setc2" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c3" layoutX="191.0" layoutY="294.0" onAction="#setc3" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c4" layoutX="191.0" layoutY="347.0" onAction="#setc4" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c5" layoutX="191.0" layoutY="401.0" onAction="#setc5" prefHeight="31.0" prefWidth="212.0" />
+      <Text layoutX="38.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advising Panel" wrappingWidth="423.0000089891255">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Text>
+      <TableView fx:id="courseinfo" layoutX="434.0" layoutY="183.0" prefHeight="111.0" prefWidth="549.0">
+         <columns>
+            <TableColumn fx:id="co1" prefWidth="108.0" text="Course 1" />
+            <TableColumn fx:id="co2" prefWidth="113.0" text="Course 2" />
+            <TableColumn fx:id="co3" prefWidth="108.0" text="Course 3" />
+            <TableColumn fx:id="co4" prefWidth="108.0" text="Course 4" />
+            <TableColumn fx:id="co5" prefWidth="111.0" text="Course 5" />
+         </columns>
+      </TableView>
+      <Button fx:id="updateadvising" layoutX="434.0" layoutY="416.0" mnemonicParsing="false" onAction="#gotoupdateadvising" prefHeight="47.0" prefWidth="549.0" text="UPDATE ADVISED COURSES">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="studentdash" layoutX="434.0" layoutY="479.0" mnemonicParsing="false" onAction="#gotostudentdash" prefHeight="47.0" prefWidth="549.0" text="GO BACK TO STUDENT'S ADVISING PANEL">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="myschedule" layoutX="434.0" layoutY="355.0" mnemonicParsing="false" onAction="#gotoschedule" prefHeight="47.0" prefWidth="549.0" text="MY SCHEDULE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
