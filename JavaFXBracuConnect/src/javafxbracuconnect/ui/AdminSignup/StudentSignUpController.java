@@ -96,6 +96,13 @@ public class StudentSignUpController implements Initializable {
     @FXML
     private void signup(ActionEvent event) throws SQLException, Exception {
         String StudentID = studentid.getText();
+        if (StudentID.length()!=8) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("Student ID must contain 8 digits.");
+            alert.showAndWait();
+            return;
+        }
         String DuplicateChecker = "SELECT * FROM SAYEEM.STUDENT WHERE ID = '" + StudentID + "'";
         PreparedStatement pst = con.prepareStatement(DuplicateChecker);
         System.out.println(DuplicateChecker);
@@ -134,6 +141,15 @@ public class StudentSignUpController implements Initializable {
         }
         String StudentDept = studentdept.getText();
         String AdPd = studentpass.getText();
+        String AdRePd =studentpasscheck.getText();
+        
+        if (StudentID.isEmpty() || StudentName.isEmpty() || StudentEmail.isEmpty() || StudentNumber.isEmpty() || StudentDept.isEmpty()  || AdPd.isEmpty() || AdRePd.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("Please Enter in all fields");
+            alert.showAndWait();
+            return;
+        }
         if (AdPd.length()<4) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -141,19 +157,10 @@ public class StudentSignUpController implements Initializable {
             alert.showAndWait();
             return;
         }
-        String AdRePd =studentpasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Password doesn't match");
-            alert.showAndWait();
-            return;
-        }
-        
-        if (StudentID.isEmpty() || StudentName.isEmpty() || StudentEmail.isEmpty() || StudentNumber.isEmpty() || StudentDept.isEmpty()  || AdPd.isEmpty() || AdRePd.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setContentText("Please Enter in all fields");
             alert.showAndWait();
             return;
         }

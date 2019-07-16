@@ -133,6 +133,15 @@ public class FacultySignUpController implements Initializable {
             return;
         }
         String AdPd = facultypass.getText();
+        String AdRePd =facultypasscheck.getText();
+        
+        if (FacultyInitial.isEmpty() || FacultyName.isEmpty() || FacultyEmail.isEmpty() || FacultyNumber.isEmpty() || AdPd.isEmpty() || AdRePd.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("Please Enter in all fields");
+            alert.showAndWait();
+            return;
+        }
         if (AdPd.length()<4) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -140,18 +149,10 @@ public class FacultySignUpController implements Initializable {
             alert.showAndWait();
             return;
         }
-        String AdRePd =facultypasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Password doesn't match");
-            alert.showAndWait();
-            return;
-        }
-        if (FacultyInitial.isEmpty() || FacultyName.isEmpty() || FacultyEmail.isEmpty() || FacultyNumber.isEmpty() || AdPd.isEmpty() || AdRePd.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setContentText("Please Enter in all fields");
             alert.showAndWait();
             return;
         }

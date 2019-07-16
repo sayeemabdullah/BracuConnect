@@ -103,6 +103,14 @@ public class SignUpController implements Initializable {
         //String AdminPassword = Hash.getSaltedHash(adminpass.getText());
         //String AdminRePassword = Hash.getSaltedHash(adminpasscheck.getText());
         String AdPd = adminpass.getText();
+        String AdRePd =adminpasscheck.getText();
+        if (AdminName.isEmpty() || AdminEmail.isEmpty() || AdPd.isEmpty() || AdRePd.isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("Please Enter in all the fields");
+            alert.showAndWait();
+            return;
+        }
         if (AdPd.length()<4) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -110,18 +118,10 @@ public class SignUpController implements Initializable {
             alert.showAndWait();
             return;
         }
-        String AdRePd =adminpasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Password doesn't match");
-            alert.showAndWait();
-            return;
-        }
-        if (AdminName.isEmpty() || AdminEmail.isEmpty() || AdPd.isEmpty() || AdRePd.isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText(null);
-            alert.setContentText("Please Enter in all the fields");
             alert.showAndWait();
             return;
         }
