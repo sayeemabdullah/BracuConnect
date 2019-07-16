@@ -133,6 +133,13 @@ public class FacultySignUpController implements Initializable {
             return;
         }
         String AdPd = facultypass.getText();
+        if (AdPd.length()<4) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("The length of password must be more than 3 characters.");
+            alert.showAndWait();
+            return;
+        }
         String AdRePd =facultypasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);

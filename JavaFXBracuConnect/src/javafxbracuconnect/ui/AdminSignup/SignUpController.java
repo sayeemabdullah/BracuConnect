@@ -103,6 +103,13 @@ public class SignUpController implements Initializable {
         //String AdminPassword = Hash.getSaltedHash(adminpass.getText());
         //String AdminRePassword = Hash.getSaltedHash(adminpasscheck.getText());
         String AdPd = adminpass.getText();
+        if (AdPd.length()<4) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("The length of password must be more than 3 characters.");
+            alert.showAndWait();
+            return;
+        }
         String AdRePd =adminpasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);

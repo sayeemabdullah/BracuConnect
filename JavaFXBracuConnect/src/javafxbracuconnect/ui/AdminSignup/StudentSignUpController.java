@@ -134,6 +134,13 @@ public class StudentSignUpController implements Initializable {
         }
         String StudentDept = studentdept.getText();
         String AdPd = studentpass.getText();
+        if (AdPd.length()<4) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setHeaderText(null);
+            alert.setContentText("The length of password must be more than 3 characters.");
+            alert.showAndWait();
+            return;
+        }
         String AdRePd =studentpasscheck.getText();
         if(!AdPd.equals(AdRePd)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
