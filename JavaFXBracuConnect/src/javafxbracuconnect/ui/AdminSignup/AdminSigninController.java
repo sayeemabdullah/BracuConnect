@@ -66,7 +66,7 @@ public class AdminSigninController implements Initializable {
 
     @FXML
     private void gotosignup(ActionEvent event) throws IOException {
-            Parent adminDash = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+            Parent adminDash = FXMLLoader.load(getClass().getResource("AdminSignUp.fxml"));
         Scene adminDashScene = new Scene(adminDash);
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setTitle("BracuConnect");

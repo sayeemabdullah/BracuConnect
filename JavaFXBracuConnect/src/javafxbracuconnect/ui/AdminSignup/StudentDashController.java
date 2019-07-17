@@ -41,13 +41,13 @@ public class StudentDashController implements Initializable {
     @FXML
     private Button studentcoursedetails;
     @FXML
-    private Button studentsettings;
-    @FXML
     private Button studentlogout;
     Connection con;
     Statement stm;
     ResultSet re; 
     int res;
+    @FXML
+    private Button studentchangepassword;
     /**
      * Initializes the controller class.
      */
@@ -97,9 +97,6 @@ public class StudentDashController implements Initializable {
         window.show();
     }
 
-    @FXML
-    private void gotostudentsettings(ActionEvent event) {
-    }
 
     @FXML
     private void gotohomepage(ActionEvent event) throws IOException {
@@ -109,6 +106,16 @@ public class StudentDashController implements Initializable {
         window.setTitle("BracuConnect");
         window.setScene(adminDashScene);
         window.show();
+    }
+
+    @FXML
+    private void gotostudentchangepassword(ActionEvent event) throws IOException {
+        Parent adminDash = FXMLLoader.load(getClass().getResource("StudentChangePassword.fxml"));
+        Scene adminDashScene = new Scene(adminDash);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("BracuConnect");
+        window.setScene(adminDashScene);
+        window.show();   
     }
     
 }

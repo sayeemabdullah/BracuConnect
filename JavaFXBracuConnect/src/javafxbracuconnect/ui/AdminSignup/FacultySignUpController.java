@@ -157,6 +157,17 @@ public class FacultySignUpController implements Initializable {
             return;
         }
         String FacultyPassword = Hash.getSaltedHash(AdPd);
+        String passqu = "INSERT INTO FACULTYPASSWORD VALUES("
+                + "'" + FacultyEmail + "',"
+                + "'" + FacultyPassword + "',"
+                + "'" + FacultyPassword + "'"
+                + ")";
+        con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
+        stm = con.createStatement();
+        res = stm.executeUpdate(passqu);
+        if (res != 0) {
+                System.out.println("Password stored.");
+        }
         String qu = "INSERT INTO FACULTY VALUES("
                 + "'" + FacultyInitial + "',"
                 + "'" + FacultyName + "',"

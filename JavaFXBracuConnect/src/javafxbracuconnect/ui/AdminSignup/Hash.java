@@ -43,6 +43,16 @@ public class Hash {
         String hashOfInput = hash(password, Base64.decodeBase64(saltAndHash[0]));
         return hashOfInput.equals(saltAndHash[1]);
     }
+    
+/*    public static String decode(String password, String stored) throws Exception {
+        String[] saltAndHash = stored.split("\\$");
+        if (saltAndHash.length != 2) {
+            throw new IllegalStateException(
+                    "The stored password must have the form 'salt$hash'");
+        }
+        String hashOfInput = hash(password, Base64.decodeBase64(saltAndHash[0]));
+        return hashOfInput;
+    }*/
 
     // using PBKDF2 from Sun, an alternative is https://github.com/wg/scrypt
     // cf. http://www.unlimitednovelty.com/2012/03/dont-use-bcrypt.html

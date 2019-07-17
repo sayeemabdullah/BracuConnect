@@ -31,7 +31,7 @@ import javafx.stage.Stage;
  *
  * @author sayeem
  */
-public class SignUpController implements Initializable {
+public class AdminSignUpController implements Initializable {
 
     @FXML
     public JFXButton signinbutton;
@@ -126,7 +126,17 @@ public class SignUpController implements Initializable {
             return;
         }
          String AdminPassword = Hash.getSaltedHash(AdPd);
-        
+        String passqu = "INSERT INTO ADMINPASSWORD VALUES("
+                + "'" + AdminEmail + "',"
+                + "'" + AdminPassword + "',"
+                + "'" + AdminPassword + "'"
+                + ")";
+        con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
+        stm = con.createStatement();
+        res = stm.executeUpdate(passqu);
+        if (res != 0) {
+                System.out.println("Password stored.");
+        }
         String qu = "INSERT INTO ADMIN VALUES("
                 + "'" + AdminName + "',"
                 + "'" + AdminEmail + "',"

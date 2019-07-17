@@ -165,6 +165,17 @@ public class StudentSignUpController implements Initializable {
             return;
         }
         String StudentPassword = Hash.getSaltedHash(AdPd);
+        String passqu = "INSERT INTO STUDENTPASSWORD VALUES("
+                + "'" + StudentID + "',"
+                + "'" + StudentPassword + "',"
+                + "'" + StudentPassword + "'"
+                + ")";
+        con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
+        stm = con.createStatement();
+        res = stm.executeUpdate(passqu);
+        if (res != 0) {
+                System.out.println("Password stored.");
+        }
         String qu = "INSERT INTO STUDENT VALUES("
                 + "'" + StudentID + "',"
                 + "'" + StudentName + "',"
