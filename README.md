@@ -7,7 +7,7 @@ And the software which I am using are "NetBeans IDE 8.2" and "SceneBuilder".
 <br>
 
 
-#### N.B. All the .java and .fxml files are inside "BracuConnect/JavaFXBracuConnect/src/javafxbracuconnect/ui/AdminSignup/".   "SignUp.fxml" and "SignUpController.java" are for Admin Signup. Don't get confused by the names.
+#### N.B. All the .java and .fxml files are inside "BracuConnect/JavaFXBracuConnect/src/javafxbracuconnect/ui/AdminSignup/". Don't get confused by the name.
 
 
 
