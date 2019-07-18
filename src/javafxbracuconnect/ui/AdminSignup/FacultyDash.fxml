@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="setting" mnemonicParsing="false" onAction="#gotosetting" prefHeight="51.0" prefWidth="192.0" text="Settings">
+            <Button fx:id="changepassword" mnemonicParsing="false" onAction="#gotochangepassword" prefHeight="51.0" prefWidth="192.0" text="Change Password">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
