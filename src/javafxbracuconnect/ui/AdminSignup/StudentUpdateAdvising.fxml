@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="461.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafxbracuconnect.ui.AdminSignup.StudentUpdateAdvisingController">
+   <children>
+      <Text layoutX="52.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 1 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 2 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 3 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 4 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="52.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course 5 :">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Advised Course" wrappingWidth="357.806640625">
+         <font>
+            <Font name="Arial Black" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="updateadvising" layoutX="293.0" layoutY="448.0" mnemonicParsing="false" onAction="#doneupdateadvising" prefHeight="53.0" prefWidth="117.0" text="Update">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="c1" layoutX="198.0" layoutY="133.0" onAction="#setc1" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c2" layoutX="198.0" layoutY="191.0" onAction="#setc2" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c3" layoutX="198.0" layoutY="244.0" onAction="#setc3" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c4" layoutX="198.0" layoutY="297.0" onAction="#setc4" prefHeight="31.0" prefWidth="212.0" />
+      <ComboBox fx:id="c5" layoutX="198.0" layoutY="351.0" onAction="#setc5" prefHeight="31.0" prefWidth="212.0" />
+      <Button fx:id="cancel" layoutX="52.0" layoutY="448.0" mnemonicParsing="false" onAction="#goback" prefHeight="53.0" prefWidth="117.0" text="Cancel">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

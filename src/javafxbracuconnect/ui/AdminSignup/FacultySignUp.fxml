@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.FacultySignUpController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="200" prefWidth="320">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="200" prefWidth="320">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="200" prefWidth="320">
+                     <children>
+                        <AnchorPane id="AnchorPane" layoutX="-32.0" layoutY="-30.0" prefHeight="525.0" prefWidth="994.0" style="-fx-background-color: #000000;">
+                           <children>
+                              <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BRACU Connect" textAlignment="CENTER" wrappingWidth="450.189453125">
+                                 <font>
+                                    <Font name="Marlett" size="32.0" />
+                                 </font>
+                              </Text>
+                              <JFXButton fx:id="signinbutton" buttonType="RAISED" layoutX="75.0" layoutY="346.0" onAction="#goToSignIn" prefHeight="31.0" prefWidth="121.0" ripplerFill="#ab2020" style="-fx-background-color: ed4949;" text="SIGN IN" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="22.0" />
+                                 </font>
+                              </JFXButton>
+                              <Text fill="#ebebeb" layoutX="44.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?" wrappingWidth="275.7255859375">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#fcfcfc" layoutX="38.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Faculty Member">
+                                 <font>
+                                    <Font name="Marlett" size="42.0" />
+                                 </font>
+                              </Text>
+                              <AnchorPane layoutX="514.0" layoutY="15.0" prefHeight="495.0" prefWidth="466.0" style="-fx-background-color: ed4949;">
+                                 <children>
+                                    <JFXTextField fx:id="facultyname" focusColor="#ed4949" layoutX="37.0" layoutY="91.0" maxWidth="408.0" minWidth="408.0" onAction="#addname" prefHeight="45.0" prefWidth="408.0" promptText="Name" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="facultypass" focusColor="#ed4949" layoutX="37.0" layoutY="262.0" maxWidth="422.0" minWidth="386.0" onAction="#addpass" prefHeight="45.0" prefWidth="408.0" promptText="Password" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <JFXPasswordField fx:id="facultypasscheck" focusColor="#ed4949" layoutX="37.0" layoutY="319.0" maxWidth="422.0" minWidth="386.0" onAction="#checkpass" prefHeight="45.0" prefWidth="408.0" promptText="Re-Enter Password" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <JFXTextField fx:id="facultyemail" focusColor="#ed4949" layoutX="37.0" layoutY="148.0" maxWidth="408.0" minWidth="408.0" onAction="#addemail" prefHeight="45.0" prefWidth="408.0" promptText="Email Address" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="signupbutton" buttonType="RAISED" layoutX="177.0" layoutY="401.0" onAction="#signup" prefHeight="47.0" prefWidth="128.0" ripplerFill="#ed4949" style="-fx-background-color: ed4949;" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font name="System Bold" size="22.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="facultyinitial" focusColor="#ed4949" layoutX="37.0" layoutY="34.0" maxWidth="408.0" minWidth="408.0" onAction="#addid" prefHeight="45.0" prefWidth="408.0" promptText="Faculty Member's Initial" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="facultynumber" focusColor="#ed4949" layoutX="37.0" layoutY="205.0" maxWidth="408.0" minWidth="408.0" onAction="#addnumber" prefHeight="45.0" prefWidth="408.0" promptText="Phone Number" unFocusColor="WHITE">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
