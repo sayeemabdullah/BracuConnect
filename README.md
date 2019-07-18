@@ -17,7 +17,4 @@ Bracu Connect is Database Software which I am making using Java , JavaFx & Apach
 #### N.B. All the .java and .fxml files are inside "BracuConnect/src/javafxbracuconnect/ui/AdminSignup/". Don't get confused by the name.
 
 
-//#### N.B. All the .java and .fxml files are inside "BracuConnect/JavaFXBracuConnect/src/javafxbracuconnect/ui/AdminSignup/". Don't get confused by the name.
-
-
 
