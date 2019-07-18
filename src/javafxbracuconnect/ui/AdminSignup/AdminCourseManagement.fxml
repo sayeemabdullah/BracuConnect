@@ -10,9 +10,9 @@
 
 <AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxbracuconnect.ui.AdminSignup.AdminCourseManagementController">
    <children>
-      <Text layoutX="14.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Management" wrappingWidth="316.999995470047">
+      <Text layoutX="14.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Management" wrappingWidth="274.999995470047">
          <font>
-            <Font name="Berlin Sans FB" size="30.0" />
+            <Font name="System Bold" size="22.0" />
          </font>
       </Text>
       <ButtonBar layoutX="-10.0" layoutY="2.0" prefHeight="65.0" prefWidth="923.0">
@@ -49,7 +49,12 @@
             <TableColumn fx:id="time" prefWidth="134.0" text="Time" />
          </columns>
       </TableView>
-      <Button fx:id="admindash" layoutX="504.0" layoutY="455.0" mnemonicParsing="false" onAction="#gotoadmindash" prefHeight="45.0" prefWidth="403.0" text="GO BACK TO ADMIN DASHBOARD">
+      <Button fx:id="admindash" layoutX="530.0" layoutY="455.0" mnemonicParsing="false" onAction="#gotoadmindash" prefHeight="45.0" prefWidth="377.0" text="GO BACK TO ADMIN DASHBOARD">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="waitinglist" layoutX="240.0" layoutY="455.0" mnemonicParsing="false" onAction="#gotowaitinglist" prefHeight="43.0" prefWidth="284.0" text="Waiting List">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>

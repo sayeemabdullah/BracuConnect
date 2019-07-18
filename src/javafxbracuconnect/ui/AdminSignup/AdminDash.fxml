@@ -89,7 +89,7 @@
                                     <Font name="System Bold" size="12.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="logout" layoutX="839.0" layoutY="531.0" mnemonicParsing="false" onAction="#gotohome" prefHeight="75.0" prefWidth="155.0" text="Log Out">
+                              <Button fx:id="settings" layoutX="839.0" layoutY="531.0" mnemonicParsing="false" onAction="#gotosettings" prefHeight="75.0" prefWidth="155.0" text="Settings">
                                  <font>
                                     <Font name="System Bold" size="15.0" />
                                  </font>

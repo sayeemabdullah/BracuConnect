@@ -88,8 +88,6 @@ public class AdminDashController implements Initializable {
     @FXML
     private Button facultymanage;
     @FXML
-    private Button logout;
-    @FXML
     private Button adminmanage;
     @FXML
     private Button editstudentbutton;
@@ -97,6 +95,8 @@ public class AdminDashController implements Initializable {
     private Button editadminbutton;
     @FXML
     private Button editfacultybutton;
+    @FXML
+    private Button settings;
 
 
     /**
@@ -226,15 +226,6 @@ public class AdminDashController implements Initializable {
     
     }
 
-    @FXML
-    private void gotohome(ActionEvent event) throws IOException {
-    Parent adminDash = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
-        Scene adminDashScene = new Scene(adminDash);
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        window.setTitle("BracuConnect");
-        window.setScene(adminDashScene);
-        window.show();
-    }
 
     @FXML
     private void gotocourse(ActionEvent event) throws IOException {
@@ -295,6 +286,16 @@ public class AdminDashController implements Initializable {
         window.setTitle("BracuConnect");
         window.setScene(adminDashScene);
         window.show(); 
+    }
+
+    @FXML
+    private void gotosettings(ActionEvent event) throws IOException {
+        Parent adminDash = FXMLLoader.load(getClass().getResource("AdminSettings.fxml"));
+        Scene adminDashScene = new Scene(adminDash);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("BracuConnect");
+        window.setScene(adminDashScene);
+        window.show();
     }
 
         

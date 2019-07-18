@@ -66,6 +66,8 @@ public class AdminCourseManagementController implements Initializable {
     int res;
     @FXML
     private TableColumn<Course,String> code;
+    @FXML
+    private Button waitinglist;
     /**
      * Initializes the controller class.
      */
@@ -167,6 +169,17 @@ public class AdminCourseManagementController implements Initializable {
         window.setTitle("BracuConnect");
         window.setScene(adminDashScene);
         window.show();
+    }
+
+    @FXML
+    private void gotowaitinglist(ActionEvent event) throws IOException {
+        //StudentCourseWaitinglist
+        Parent adminDash = FXMLLoader.load(getClass().getResource("AdminCourseWaitingList.fxml"));
+        Scene adminDashScene = new Scene(adminDash);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setTitle("BracuConnect");
+        window.setScene(adminDashScene);
+        window.show();   
     }
     
     public class Course{
