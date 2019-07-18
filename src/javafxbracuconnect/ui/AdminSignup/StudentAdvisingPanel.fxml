@@ -69,10 +69,5 @@
             <Font name="System Bold" size="21.0" />
          </font>
       </Button>
-      <Button fx:id="myschedule" layoutX="434.0" layoutY="355.0" mnemonicParsing="false" onAction="#gotoschedule" prefHeight="47.0" prefWidth="549.0" text="MY SCHEDULE">
-         <font>
-            <Font name="System Bold" size="21.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

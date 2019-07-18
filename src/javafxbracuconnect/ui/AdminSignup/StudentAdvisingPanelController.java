@@ -68,8 +68,6 @@ public class StudentAdvisingPanelController implements Initializable {
     private TableColumn<AdvisingStudent,String> co5;
     @FXML
     private Button studentdash;
-    @FXML
-    private Button myschedule;
     Connection con;
     Statement stm;
     ResultSet re,rest; 
@@ -309,9 +307,6 @@ public class StudentAdvisingPanelController implements Initializable {
         window.show();
     }
 
-    @FXML
-    private void gotoschedule(ActionEvent event) {
-    }
     
      public class AdvisingStudent {
 
