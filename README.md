@@ -1,7 +1,5 @@
 # BracuConnect
-<br>
-<br>
-Bracu Connect is Database Software which I am making using Java , JavaFx & Apache Derby and the software which I am using are "NetBeans IDE 8.2" and "SceneBuilder".
+### Bracu Connect is Database Software which I made using Java , JavaFx & Apache Derby and the software which I am using are "NetBeans IDE 8.2" and "SceneBuilder".
 <br>
 
 ## Features :
@@ -13,8 +11,12 @@ Bracu Connect is Database Software which I am making using Java , JavaFx & Apach
 |  <b> Student <b> | ✓                 | ✓ |   ✗ | ✗ | ✗ | ✗ |✓ |✓ |✓ |✗ |
 
 
+<br>
+ <b> ⚫ All the passwords are hashed so no one can view the actual password from the database. </b> <br>
+<b>  ⚫ Less than 4 characters password is not accepted. </b> <br>
+ <b> ⚫ Previously used password (Recent one) cannot be used for security reasons. </b> <br>
 
-#### N.B. All the .java and .fxml files are inside "BracuConnect/JavaFXBracuConnect/src/javafxbracuconnect/ui/AdminSignup/". Don't get confused by the name.
+### N.B. All the .java and .fxml files are inside "BracuConnect/src/javafxbracuconnect/ui/AdminSignup/". Don't get confused by the name.
 
 
 
