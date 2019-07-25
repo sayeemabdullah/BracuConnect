@@ -89,7 +89,8 @@ public class StudentCourseWaitinglistController implements Initializable {
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setTitle("BracuConnect");
             window.setScene(adminDashScene);
-            window.show(); 
+            window.show();
+            return;
         }
         String Enrolled = courseEnrolled.getValue();
         String CGPA = cgpacheck.getValue();
@@ -110,7 +111,8 @@ public class StudentCourseWaitinglistController implements Initializable {
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setTitle("BracuConnect");
             window.setScene(adminDashScene);
-            window.show(); 
+            window.show();
+            return;
         } else if((Enrolled.equals("4")) && (CGPA.equals("<3.5"))) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -121,7 +123,8 @@ public class StudentCourseWaitinglistController implements Initializable {
             Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
             window.setTitle("BracuConnect");
             window.setScene(adminDashScene);
-            window.show(); 
+            window.show();
+            return;
         } else if((Enrolled.equals("4")) && (CGPA.equals("<3"))) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -133,6 +136,7 @@ public class StudentCourseWaitinglistController implements Initializable {
             window.setTitle("BracuConnect");
             window.setScene(adminDashScene);
             window.show(); 
+            return;
     }
           //COURSEWAITINGLIST
           String qu = "INSERT INTO COURSEWAITINGLIST VALUES("

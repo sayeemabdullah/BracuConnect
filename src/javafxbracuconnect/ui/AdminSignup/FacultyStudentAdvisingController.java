@@ -354,16 +354,20 @@ public class FacultyStudentAdvisingController implements Initializable {
     }
     
     public void fillComboBox() throws SQLException{
-        String qu = "SELECT CODE FROM COURSE";
+        String qu = "SELECT CODE , SECTION FROM COURSE";
         con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
         stm = con.createStatement();
         re = stm.executeQuery(qu);
         while(re.next()){
-            c1.getItems().add(re.getString("CODE"));
-            c2.getItems().add(re.getString("CODE"));
-            c3.getItems().add(re.getString("CODE"));
-            c4.getItems().add(re.getString("CODE"));
-            c5.getItems().add(re.getString("CODE"));
+            String courseSelect = re.getString("CODE");
+            String sectionSelect = re.getString("SECTION");
+            String FinalValueSelect = courseSelect +" ("+sectionSelect+")";
+            System.out.println(FinalValueSelect);
+            c1.getItems().add(FinalValueSelect);
+            c2.getItems().add(FinalValueSelect);
+            c3.getItems().add(FinalValueSelect);
+            c4.getItems().add(FinalValueSelect);
+            c5.getItems().add(FinalValueSelect);
         }
     
     }
