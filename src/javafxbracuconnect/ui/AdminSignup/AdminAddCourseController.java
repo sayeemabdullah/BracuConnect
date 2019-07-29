@@ -121,6 +121,18 @@ public class AdminAddCourseController implements Initializable {
             alert.showAndWait();
             return;
         }
+        
+    String FinalValueSelect = Code +" ("+Section+")";
+    String seats = "40";
+    
+    String qu1 = "INSERT INTO COURSESEATCOUNT VALUES("
+                + "'" + FinalValueSelect + "',"
+                + "'" + seats + "'"
+                + ")";
+        con = DriverManager.getConnection("jdbc:derby://localhost:1527/BracuConnect", "sayeem", "17101009");
+        stm = con.createStatement();
+        res = stm.executeUpdate(qu1);
+    
     String qu = "INSERT INTO COURSE VALUES("
                 + "'" + Code + "',"
                 + "'" + Department + "',"
