@@ -1,5 +1,5 @@
 # BracuConnect
-### Bracu Connect is a Database Software which I made using Java , JavaFx & Apache Derby and the software which I am using are "NetBeans IDE 8.2" and "SceneBuilder".
+### Bracu Connect is a Database Software which I made using Java , JavaFx & Apache Derby and the software which I used "NetBeans IDE 8.2" and "SceneBuilder".
 <br>
 
 ## Features :
